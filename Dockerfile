@@ -6,7 +6,6 @@ RUN chown -Rf nginx:nginx /nginx
 RUN chown -Rf nginx:nginx /var/cache/nginx
 RUN chown -Rf nginx:nginx /var/run
 RUN chown -Rf nginx:nginx /var/log/nginx
-RUN chown -Rf nginx:nginx /var/cache/nginx/client_temp
 
 USER nginx
 
