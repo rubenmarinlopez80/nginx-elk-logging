@@ -10,6 +10,7 @@ RUN chown -Rf nginx:nginx /var/log/nginx/
 RUN mkdir /var/cache/nginx/client_temp
 
 RUN chmod -Rf 0777 /var
+RUN chmod -Rf 0777 /nginx
 
 RUN chown -Rf nginx:nginx /nginx/nginx.pid
 
