@@ -2,7 +2,7 @@ FROM nginx:stable-alpine
 
 WORKDIR /nginx
 
-RUN chown nginx:nginx /nginx
+RUN chown -R nginx:nginx /nginx /var/cache/nginx /var/run /var/log/nginx
 
 USER nginx
 
