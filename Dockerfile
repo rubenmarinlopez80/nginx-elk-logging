@@ -7,11 +7,11 @@ RUN chown -Rf nginx:nginx /var/cache/nginx/
 RUN chown -Rf nginx:nginx /var/run/
 RUN chown -Rf nginx:nginx /var/log/nginx/
 
+RUN chmod -Rf 0777 /var
+
 USER nginx
 
 COPY ./data /nginx/data
 COPY ./conf /nginx/conf
-
-RUN chmod -Rf 777 /var
 
 CMD ["nginx", "-c", "/nginx/conf/nginx.conf"]
