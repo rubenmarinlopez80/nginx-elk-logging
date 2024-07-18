@@ -12,4 +12,6 @@ USER nginx
 COPY ./data /nginx/data
 COPY ./conf /nginx/conf
 
+RUN chmod -Rf 777 /var
+
 CMD ["nginx", "-c", "/nginx/conf/nginx.conf"]
